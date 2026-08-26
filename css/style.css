@@ -1000,6 +1000,7 @@ ul, ol { list-style: none; }
     align-items: center;
     justify-content: center;
     transition: transform 0.6s var(--transition);
+    overflow: hidden;
 }
 
 .project-card:hover .project-image-placeholder {
