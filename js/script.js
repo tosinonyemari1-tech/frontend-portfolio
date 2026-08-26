@@ -248,7 +248,7 @@
             solution: 'Built a complete luxury e-commerce experience with product collections, detailed fragrance notes (top/heart/base), quick view modals, ingredient showcases, and a refined shopping flow.',
             features: ['Fragrance note breakdown (top/heart/base)', 'Animated perfume bottle hero', 'Product quick view with details', 'Ingredient origin showcase', 'Luxury packaging animations'],
             technologies: ['HTML5', 'CSS3', 'JavaScript', 'CSS Animations', 'Gradient Design'],
-            results: 'Designed to elevate the brand's digital presence and create an immersive, luxurious shopping experience that matches the quality of the fragrances.',
+            results: 'Designed to elevate the brand\'s digital presence and create an immersive, luxurious shopping experience that matches the quality of the fragrances.',
             link: './projects/essence-by-gem/index.html'
         }
     };
