@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essence By Gem — Premium artisan fragrances crafted for the modern connoisseur">
+    <title>Essence By Gem — Premium Fragrances</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a href="../../index.html" class="back-link">← Back to Portfolio</a>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <span>✦ Free luxury gift wrapping on orders over $100 ✦</span>
+    </div>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+        <div class="container">
+            <nav class="nav-inner">
+                <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+                </button>
+                <a href="#" class="logo">ESSENCE<span class="logo-dot">.</span></a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#collections">Collections</a>
+                    <a href="#bestsellers">Bestsellers</a>
+                    <a href="#story">Our Story</a>
+                    <a href="#ingredients">Ingredients</a>
+                    <a href="#reviews">Reviews</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="nav-icon" id="searchBtn" aria-label="Search">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    </button>
+                    <button class="nav-icon" id="cartBtn" aria-label="Cart">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+                        <span class="badge" id="cartCount">0</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-overlay" id="menuOverlay"></div>
+        <div class="mobile-panel">
+            <div class="mobile-panel-header">
+                <span class="logo">ESSENCE<span class="logo-dot">.</span></span>
+                <button class="close-btn" id="closeMenu" aria-label="Close menu">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="#collections">Collections</a>
+                <a href="#bestsellers">Bestsellers</a>
+                <a href="#story">Our Story</a>
+                <a href="#ingredients">Ingredients</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-inner">
+            <input type="text" class="search-input" placeholder="Search fragrances..." id="searchInput" autocomplete="off">
+            <button class="search-close" id="searchClose" aria-label="Close search">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-bg">
+                <div class="hero-gradient"></div>
+                <div class="hero-particles" id="heroParticles"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-label reveal-up">Artisan Fragrances</span>
+                    <h1 class="reveal-up">
+                        <span class="hero-line">Discover</span>
+                        <span class="hero-line hero-italic">your</span>
+                        <span class="hero-line">essence<span class="accent-dot">.</span></span>
+                    </h1>
+                    <p class="hero-desc reveal-up">
+                        Handcrafted perfumes that tell a story. Each fragrance is a carefully composed symphony of rare ingredients, designed to leave an unforgettable impression.
+                    </p>
+                    <div class="hero-btns reveal-up">
+                        <a href="#collections" class="btn-primary">Explore Collections</a>
+                        <a href="#story" class="btn-text">Our Story →</a>
+                    </div>
+                </div>
+                <!-- Floating Bottle Visual -->
+                <div class="hero-visual">
+                    <div class="bottle-display">
+                        <div class="bottle">
+                            <div class="bottle-cap"></div>
+                            <div class="bottle-neck"></div>
+                            <div class="bottle-body">
+                                <div class="bottle-label">EBG</div>
+                                <div class="bottle-liquid"></div>
+                            </div>
+                        </div>
+                        <div class="bottle-glow"></div>
+                        <div class="bottle-shadow"></div>
+                        <div class="float-tag float-tag-1">
+                            <span class="tag-icon">🌹</span>
+                            <span>Rose Absolute</span>
+                        </div>
+                        <div class="float-tag float-tag-2">
+                            <span class="tag-icon">🪵</span>
+                            <span>Sandalwood</span>
+                        </div>
+                        <div class="float-tag float-tag-3">
+                            <span class="tag-icon">✨</span>
+                            <span>Musk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee -->
+        <div class="marquee">
+            <div class="marquee-inner">
+                <span>EAU DE PARFUM</span>
+                <span class="m-dot">✦</span>
+                <span>ARTISAN CRAFTED</span>
+                <span class="m-dot">✦</span>
+                <span>RARE INGREDIENTS</span>
+                <span class="m-dot">✦</span>
+                <span>LUXURY FRAGRANCES</span>
+                <span class="m-dot">✦</span>
+                <span>LONG-LASTING</span>
+                <span class="m-dot">✦</span>
+                <span>EAU DE PARFUM</span>
+                <span class="m-dot">✦</span>
+                <span>ARTISAN CRAFTED</span>
+                <span class="m-dot">✦</span>
+                <span>RARE INGREDIENTS</span>
+                <span class="m-dot">✦</span>
+                <span>LUXURY FRAGRANCES</span>
+                <span class="m-dot">✦</span>
+                <span>LONG-LASTING</span>
+                <span class="m-dot">✦</span>
+            </div>
+        </div>
+
+        <!-- Collections -->
+        <section class="section" id="collections">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Collections</span>
+                    <h2>Fragrance <em>Families</em></h2>
+                    <p>Explore our curated collections, each inspired by a different mood and moment.</p>
+                </div>
+                <div class="collections-grid">
+                    <div class="collection-card">
+                        <div class="collection-visual" style="background:linear-gradient(135deg,#2a1520,#1a0a12)">
+                            <div class="collection-icon">🌹</div>
+                        </div>
+                        <h3>Floral</h3>
+                        <p>Romantic bouquets of rose, jasmine, and peony.</p>
+                        <span class="collection-count">8 fragrances</span>
+                    </div>
+                    <div class="collection-card">
+                        <div class="collection-visual" style="background:linear-gradient(135deg,#1a2015,#0a1208)">
+                            <div class="collection-icon">🌿</div>
+                        </div>
+                        <h3>Woody</h3>
+                        <p>Deep, warm notes of sandalwood, cedar, and vetiver.</p>
+                        <span class="collection-count">6 fragrances</span>
+                    </div>
+                    <div class="collection-card">
+                        <div class="collection-visual" style="background:linear-gradient(135deg,#201a2a,#120a1a)">
+                            <div class="collection-icon">🍊</div>
+                        </div>
+                        <h3>Citrus</h3>
+                        <p>Bright, energizing blends of bergamot, lemon, and neroli.</p>
+                        <span class="collection-count">5 fragrances</span>
+                    </div>
+                    <div class="collection-card">
+                        <div class="collection-visual" style="background:linear-gradient(135deg,#2a2015,#1a1208)">
+                            <div class="collection-icon">🍯</div>
+                        </div>
+                        <h3>Oriental</h3>
+                        <p>Rich, intoxicating accords of amber, vanilla, and oud.</p>
+                        <span class="collection-count">7 fragrances</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bestsellers -->
+        <section class="section section-alt" id="bestsellers">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Bestsellers</span>
+                    <h2>Most <em>Loved</em></h2>
+                    <p>Our signature fragrances, chosen by thousands of discerning customers.</p>
+                </div>
+                <div class="products-grid" id="productsGrid">
+                    <!-- Injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Story -->
+        <section class="section" id="story">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-visual">
+                        <div class="story-img-placeholder">
+                            <div class="story-pattern"></div>
+                            <div class="story-text-overlay">EST.<br>2020</div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <span class="section-tag">Our Story</span>
+                        <h2>Born from a<br><em>passion for scent</em></h2>
+                        <p>Essence By Gem was founded with a singular vision: to create fragrances that are more than just scents — they're memories in a bottle. Every perfume in our collection is handcrafted in small batches using the finest natural ingredients sourced from around the world.</p>
+                        <p>We believe that a great fragrance should evolve on your skin throughout the day, revealing different facets and notes as time passes. That's why we compose each scent with top, heart, and base notes that unfold gracefully.</p>
+                        <div class="story-values">
+                            <div class="story-value">
+                                <strong>Handcrafted</strong>
+                                <span>Made in small batches</span>
+                            </div>
+                            <div class="story-value">
+                                <strong>Natural</strong>
+                                <span>Premium ingredients only</span>
+                            </div>
+                            <div class="story-value">
+                                <strong>Unique</strong>
+                                <span>Exclusive formulations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ingredients -->
+        <section class="section section-alt" id="ingredients">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Ingredients</span>
+                    <h2>Sourced from <em>nature</em></h2>
+                    <p>We travel the world to find the rarest and most exquisite ingredients for our fragrances.</p>
+                </div>
+                <div class="ingredients-grid">
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon">🌹</div>
+                        <h3>Rose Absolute</h3>
+                        <span class="ingredient-origin">Isparta, Turkey</span>
+                        <p>Hand-picked at dawn when the essential oils are at their peak. Deep, romantic, and timeless.</p>
+                    </div>
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon">🪵</div>
+                        <h3>Mysore Sandalwood</h3>
+                        <span class="ingredient-origin">Karnataka, India</span>
+                        <p>The finest sandalwood in the world. Creamy, warm, and profoundly calming.</p>
+                    </div>
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon">🍊</div>
+                        <h3>Calabrian Bergamot</h3>
+                        <span class="ingredient-origin">Calabria, Italy</span>
+                        <p>Cold-pressed from the rind of the bergamot orange. Bright, sparkling, and citrusy.</p>
+                    </div>
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon">🍯</div>
+                        <h3>Madagascar Vanilla</h3>
+                        <span class="ingredient-origin">Madagascar</span>
+                        <p>Ripe vanilla beans aged to perfection. Sweet, warm, and intoxicatingly rich.</p>
+                    </div>
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon">🌿</div>
+                        <h3>Oud Wood</h3>
+                        <span class="ingredient-origin">Southeast Asia</span>
+                        <p>Resinous agarwood aged for decades. Deep, smoky, and mysterious.</p>
+                    </div>
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon">🌾</div>
+                        <h3>Egyptian Musk</h3>
+                        <span class="ingredient-origin">Nile Valley, Egypt</span>
+                        <p>Soft, powdery musk that creates a warm, sensual base note.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="section" id="reviews">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Reviews</span>
+                    <h2>What our <em>clients</em> say</h2>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"I've tried countless luxury perfumes, but Essence By Gem is in a league of its own. The longevity is incredible and I get compliments everywhere I go."</p>
+                        <div class="review-author">
+                            <div class="author-avatar" style="background:linear-gradient(135deg,#c9a87c,#8b6f4e)"></div>
+                            <div><strong>Olivia R.</strong><span>Verified Buyer</span></div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The packaging alone feels like a luxury experience. But the fragrance itself is what keeps me coming back. Midnight Oud is absolutely divine."</p>
+                        <div class="review-author">
+                            <div class="author-avatar" style="background:linear-gradient(135deg,#7c9cc9,#4e6f8b)"></div>
+                            <div><strong>Marcus T.</strong><span>Verified Buyer</span></div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"I bought this as a gift and ended up keeping it for myself. The blend is so sophisticated — it evolves beautifully throughout the day."</p>
+                        <div class="review-author">
+                            <div class="author-avatar" style="background:linear-gradient(135deg,#c97c9c,#8b4e6f)"></div>
+                            <div><strong>Sarah K.</strong><span>Verified Buyer</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="newsletter">
+                    <h2>Join the <em>inner circle</em></h2>
+                    <p>Be the first to know about new launches, exclusive offers, and fragrance insights.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Contact</span>
+                    <h2>Get in <em>touch</em></h2>
+                </div>
+                <div class="contact-wrap">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select>
+                                <option>General Inquiry</option>
+                                <option>Wholesale</option>
+                                <option>Press & Media</option>
+                                <option>Custom Fragrance</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea placeholder="Tell us how we can help..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width:100%;justify-content:center">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo">ESSENCE<span class="logo-dot">.</span></span>
+                    <p>Handcrafted fragrances that tell your story. Made with love, bottled with care.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <a href="#collections">Collections</a>
+                    <a href="#bestsellers">Bestsellers</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Gift Sets</a>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <a href="#story">Our Story</a>
+                    <a href="#ingredients">Ingredients</a>
+                    <a href="#">Sustainability</a>
+                    <a href="#">Press</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Shipping & Returns</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Essence By Gem. All rights reserved.</p>
+                <a href="../../index.html" class="back-portfolio">← Back to Portfolio</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

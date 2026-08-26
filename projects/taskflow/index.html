@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TaskFlow — Enterprise productivity and project management platform">
+    <title>TaskFlow — Project Management Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a href="../../index.html" class="back-link">← Back to Portfolio</a>
+
+    <!-- Navigation -->
+    <header class="nav">
+        <div class="container">
+            <nav class="nav-inner">
+                <a href="#" class="logo">⚡ TaskFlow</a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#features">Features</a>
+                    <a href="#product">Product</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact" class="btn-nav">Get Started Free</a>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+        <div class="mobile-panel">
+            <a href="#features">Features</a>
+            <a href="#product">Product</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact" class="btn-primary" style="text-align:center;margin-top:16px">Get Started Free</a>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-bg">
+                <div class="hero-gradient"></div>
+                <div class="hero-dots"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge">🚀 New: AI-Powered Workflows</span>
+                    <h1>Manage Projects<br><span class="gradient-text">Effortlessly</span></h1>
+                    <p>The all-in-one project management platform that helps teams collaborate, track progress, and deliver results faster. Built for modern workflows.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn-primary">Start Free — No Card Required</a>
+                        <a href="#product" class="btn-outline">See How It Works</a>
+                    </div>
+                    <div class="hero-social-proof">
+                        <div class="avatars">
+                            <div class="avatar" style="background:#6366f1"></div>
+                            <div class="avatar" style="background:#8b5cf6"></div>
+                            <div class="avatar" style="background:#a855f7"></div>
+                            <div class="avatar" style="background:#d946ef"></div>
+                        </div>
+                        <span>Trusted by <strong>12,000+</strong> teams worldwide</span>
+                    </div>
+                </div>
+                <!-- Dashboard Preview -->
+                <div class="hero-visual">
+                    <div class="dashboard-ui">
+                        <div class="dash-sidebar">
+                            <div class="ds-logo">TF</div>
+                            <div class="ds-nav-item active"></div>
+                            <div class="ds-nav-item"></div>
+                            <div class="ds-nav-item"></div>
+                            <div class="ds-nav-item"></div>
+                        </div>
+                        <div class="dash-main">
+                            <div class="dm-header">
+                                <div class="dm-title"></div>
+                                <div class="dm-actions">
+                                    <div class="dm-btn"></div>
+                                    <div class="dm-btn"></div>
+                                </div>
+                            </div>
+                            <div class="dm-board">
+                                <div class="dm-col">
+                                    <div class="dm-col-header">To Do <span>3</span></div>
+                                    <div class="dm-card" style="border-left:3px solid #6366f1"></div>
+                                    <div class="dm-card" style="border-left:3px solid #f59e0b"></div>
+                                    <div class="dm-card" style="border-left:3px solid #22c55e"></div>
+                                </div>
+                                <div class="dm-col">
+                                    <div class="dm-col-header">In Progress <span>2</span></div>
+                                    <div class="dm-card" style="border-left:3px solid #6366f1"></div>
+                                    <div class="dm-card" style="border-left:3px solid #ef4444"></div>
+                                </div>
+                                <div class="dm-col">
+                                    <div class="dm-col-header">Done <span>4</span></div>
+                                    <div class="dm-card done" style="border-left:3px solid #22c55e"></div>
+                                    <div class="dm-card done" style="border-left:3px solid #22c55e"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logos -->
+        <section class="logos-section">
+            <div class="container">
+                <p class="logos-label">Trusted by forward-thinking companies</p>
+                <div class="logos-row">
+                    <span>Stripe</span><span>Notion</span><span>Vercel</span><span>Figma</span><span>Linear</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="tag">Features</span>
+                    <h2>Everything Your Team<br><span class="gradient-text">Needs to Ship</span></h2>
+                    <p>Powerful features wrapped in a beautiful interface. No complexity, just productivity.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card feature-lg">
+                        <div class="feature-icon">📋</div>
+                        <h3>Kanban Boards</h3>
+                        <p>Visual task management with drag-and-drop boards, customizable columns, and real-time collaboration.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Timeline View</h3>
+                        <p>Gantt-style timelines for planning and tracking project milestones and dependencies.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3>AI Assistant</h3>
+                        <p>Smart task suggestions, automated prioritization, and intelligent deadline recommendations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Workflows</h3>
+                        <p>Custom automation rules that handle repetitive tasks and keep your projects moving.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>Analytics</h3>
+                        <p>Real-time dashboards with velocity tracking, burndown charts, and team performance metrics.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <h3>Team Chat</h3>
+                        <p>Built-in messaging with threads, file sharing, and @mentions right alongside your tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product / Workflow -->
+        <section class="section section-dark" id="product">
+            <div class="container">
+                <div class="section-header">
+                    <span class="tag">Product</span>
+                    <h2>See How <span class="gradient-text">TaskFlow</span> Works</h2>
+                </div>
+                <!-- Tabs -->
+                <div class="product-tabs">
+                    <button class="ptab active" data-tab="boards">Boards</button>
+                    <button class="ptab" data-tab="timeline">Timeline</button>
+                    <button class="ptab" data-tab="analytics">Analytics</button>
+                </div>
+                <div class="product-panels">
+                    <div class="ppanel active" id="tab-boards">
+                        <div class="panel-ui">
+                            <div class="panel-board">
+                                <div class="panel-col"><div class="panel-col-head" style="background:#6366f1">Backlog</div><div class="panel-card"></div><div class="panel-card"></div></div>
+                                <div class="panel-col"><div class="panel-col-head" style="background:#f59e0b">In Progress</div><div class="panel-card"></div></div>
+                                <div class="panel-col"><div class="panel-col-head" style="background:#22c55e">Review</div><div class="panel-card"></div><div class="panel-card"></div><div class="panel-card"></div></div>
+                                <div class="panel-col"><div class="panel-col-head" style="background:#8b5cf6">Done</div><div class="panel-card done"></div><div class="panel-card done"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ppanel" id="tab-timeline">
+                        <div class="panel-ui">
+                            <div class="panel-timeline">
+                                <div class="timeline-row"><div class="tl-bar" style="width:60%;margin-left:10%;background:#6366f1"></div></div>
+                                <div class="timeline-row"><div class="tl-bar" style="width:40%;margin-left:20%;background:#8b5cf6"></div></div>
+                                <div class="timeline-row"><div class="tl-bar" style="width:70%;margin-left:5%;background:#22c55e"></div></div>
+                                <div class="timeline-row"><div class="tl-bar" style="width:30%;margin-left:30%;background:#f59e0b"></div></div>
+                                <div class="timeline-row"><div class="tl-bar" style="width:50%;margin-left:15%;background:#ef4444"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ppanel" id="tab-analytics">
+                        <div class="panel-ui">
+                            <div class="panel-analytics">
+                                <div class="pa-card"><div class="pa-val">847</div><div class="pa-label">Tasks Completed</div><div class="pa-bar" style="width:85%;background:#22c55e"></div></div>
+                                <div class="pa-card"><div class="pa-val">23</div><div class="pa-label">Active Projects</div><div class="pa-bar" style="width:60%;background:#6366f1"></div></div>
+                                <div class="pa-card"><div class="pa-val">94%</div><div class="pa-label">On-Time Delivery</div><div class="pa-bar" style="width:94%;background:#8b5cf6"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integrations -->
+        <section class="section" id="integrations">
+            <div class="container">
+                <div class="section-header">
+                    <span class="tag">Integrations</span>
+                    <h2>Works With Your<br><span class="gradient-text">Favorite Tools</span></h2>
+                </div>
+                <div class="integrations-grid">
+                    <div class="int-card"><div class="int-icon" style="background:#6366f1">S</div><span>Slack</span></div>
+                    <div class="int-card"><div class="int-icon" style="background:#22c55e">G</div><span>GitHub</span></div>
+                    <div class="int-card"><div class="int-icon" style="background:#f59e0b">F</div><span>Figma</span></div>
+                    <div class="int-card"><div class="int-icon" style="background:#06b6d4">Z</div><span>Zoom</span></div>
+                    <div class="int-card"><div class="int-icon" style="background:#8b5cf6">N</div><span>Notion</span></div>
+                    <div class="int-card"><div class="int-icon" style="background:#ef4444">G</div><span>Google Drive</span></div>
+                    <div class="int-card"><div class="int-icon" style="background:#ec4899">J</div><span>Jira</span></div>
+                    <div class="int-card"><div class="int-icon" style="background:#14b8a6">D</div><span>Dropbox</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="section section-dark" id="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="tag">Pricing</span>
+                    <h2>Simple, Honest<br><span class="gradient-text">Pricing</span></h2>
+                    <p>Start free. Upgrade when you're ready. No surprises.</p>
+                </div>
+                <div class="pricing-toggle">
+                    <button class="toggle-btn active" data-period="monthly">Monthly</button>
+                    <button class="toggle-btn" data-period="yearly">Yearly <span class="badge-save">Save 25%</span></button>
+                </div>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <h3>Starter</h3>
+                        <div class="price"><span class="currency">$</span><span class="amount" data-monthly="0" data-yearly="0">0</span><span class="period">/month</span></div>
+                        <p>For individuals and small projects.</p>
+                        <ul>
+                            <li>✓ Up to 5 projects</li>
+                            <li>✓ Kanban boards</li>
+                            <li>✓ Basic analytics</li>
+                            <li>✓ 1 GB storage</li>
+                        </ul>
+                        <a href="#contact" class="btn-outline-card">Get Started</a>
+                    </div>
+                    <div class="price-card featured">
+                        <span class="popular">Most Popular</span>
+                        <h3>Pro</h3>
+                        <div class="price"><span class="currency">$</span><span class="amount" data-monthly="12" data-yearly="9">12</span><span class="period">/user/month</span></div>
+                        <p>For growing teams that need more power.</p>
+                        <ul>
+                            <li>✓ Unlimited projects</li>
+                            <li>✓ Timeline & Gantt</li>
+                            <li>✓ Advanced analytics</li>
+                            <li>✓ 50 GB storage</li>
+                            <li>✓ AI Assistant</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary-card">Start Free Trial</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>Enterprise</h3>
+                        <div class="price"><span class="currency">$</span><span class="amount" data-monthly="29" data-yearly="22">29</span><span class="period">/user/month</span></div>
+                        <p>For organizations with advanced needs.</p>
+                        <ul>
+                            <li>✓ Everything in Pro</li>
+                            <li>✓ SSO & SAML</li>
+                            <li>✓ Custom workflows</li>
+                            <li>✓ Unlimited storage</li>
+                            <li>✓ Dedicated support</li>
+                        </ul>
+                        <a href="#contact" class="btn-outline-card">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="tag">Testimonials</span>
+                    <h2>Teams Love <span class="gradient-text">TaskFlow</span></h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"TaskFlow replaced 4 different tools for us. The AI suggestions alone save our PM hours every week."</p>
+                        <div class="t-author">
+                            <div class="t-avatar" style="background:#6366f1"></div>
+                            <div><strong>Marcus Chen</strong><span>Engineering Lead, TechCorp</span></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The best project management tool I've used. Beautiful, fast, and our whole team actually enjoys using it."</p>
+                        <div class="t-author">
+                            <div class="t-avatar" style="background:#8b5cf6"></div>
+                            <div><strong>Sarah Kim</strong><span>Product Manager, StartupXYZ</span></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"We migrated from Jira and never looked back. TaskFlow is everything a modern team needs and nothing they don't."</p>
+                        <div class="t-author">
+                            <div class="t-avatar" style="background:#22c55e"></div>
+                            <div><strong>Alex Rivera</strong><span>CTO, Digital Agency Co</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section section-dark" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="tag">FAQ</span>
+                    <h2>Got <span class="gradient-text">Questions</span>?</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-q">Can I try TaskFlow for free? <span>+</span></button>
+                        <div class="faq-a"><p>Yes! Our Starter plan is completely free, and our Pro plan comes with a 14-day free trial. No credit card required.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">How does the AI assistant work? <span>+</span></button>
+                        <div class="faq-a"><p>Our AI learns from your team's patterns to suggest task priorities, deadline estimates, and workflow optimizations. It gets smarter over time.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">Can I import data from other tools? <span>+</span></button>
+                        <div class="faq-a"><p>Absolutely. We support one-click imports from Jira, Asana, Trello, Monday.com, and CSV files. Migration typically takes less than 10 minutes.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">Is my data secure? <span>+</span></button>
+                        <div class="faq-a"><p>We use end-to-end encryption, SOC 2 Type II compliance, and enterprise-grade security. Your data is hosted in SOC 2 certified data centers.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">Can I cancel anytime? <span>+</span></button>
+                        <div class="faq-a"><p>Yes, you can cancel your subscription at any time. No long-term contracts or cancellation fees. You'll keep access until the end of your billing period.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>Ready to <span class="gradient-text">Level Up</span> Your Team?</h2>
+                    <p>Join 12,000+ teams already using TaskFlow to deliver better work, faster.</p>
+                    <div class="cta-btns">
+                        <a href="#contact" class="btn-primary">Start Free Trial</a>
+                        <a href="#" class="btn-outline">Talk to Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="tag">Contact</span>
+                    <h2>Let's <span class="gradient-text">Connect</span></h2>
+                </div>
+                <div class="contact-wrap">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Company</label>
+                            <input type="text" placeholder="Your company">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea placeholder="Tell us about your needs..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width:100%;justify-content:center">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo">⚡ TaskFlow</span>
+                    <p>The project management platform for modern teams. Fast, beautiful, and AI-powered.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#">Changelog</a>
+                    <a href="#">Roadmap</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Status</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TaskFlow. All rights reserved.</p>
+                <a href="../../index.html" class="back-portfolio">← Back to Portfolio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

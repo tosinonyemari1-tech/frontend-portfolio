@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend Developer Portfolio — Building fast, modern, and high-converting digital experiences.">
+    <meta name="keywords" content="frontend developer, web developer, UI developer, portfolio, freelance">
+    <meta name="author" content="Tosin Ndidi">
+    <title>Tosin Ndidi — Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- Page Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-text">
+                <span>T</span><span>O</span><span>S</span><span>I</span><span>N</span>
+                <span class="loader-dot">.</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress" id="loaderProgress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">{</span>
+                <span class="logo-text">TN</span>
+                <span class="logo-bracket">}</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-bg"></div>
+        <nav class="mobile-menu-links">
+            <a href="#home" class="mobile-link" data-index="0">Home</a>
+            <a href="#about" class="mobile-link" data-index="1">About</a>
+            <a href="#skills" class="mobile-link" data-index="2">Skills</a>
+            <a href="#experience" class="mobile-link" data-index="3">Experience</a>
+            <a href="#projects" class="mobile-link" data-index="4">Projects</a>
+            <a href="#services" class="mobile-link" data-index="5">Services</a>
+            <a href="#contact" class="mobile-link" data-index="6">Contact</a>
+            <a href="#contact" class="mobile-link mobile-cta" data-index="7">Let's Talk →</a>
+        </nav>
+    </div>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="hero-glow"></div>
+                <div class="hero-particles" id="heroParticles"></div>
+                <div class="hero-lines">
+                    <div class="hero-line"></div>
+                    <div class="hero-line"></div>
+                    <div class="hero-line"></div>
+                    <div class="hero-line"></div>
+                    <div class="hero-line"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge reveal-up">
+                    <span class="badge-dot"></span>
+                    Available for Work
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-line-text reveal-up">Tosin</span>
+                    <span class="hero-line-text reveal-up">Ndidi<span class="hero-dot">.</span></span>
+                </h1>
+                <div class="hero-role reveal-up">
+                    <span class="hero-role-label">Frontend Developer</span>
+                </div>
+                <p class="hero-desc reveal-up">
+                    Building fast, modern and high-converting digital experiences.<br>
+                    I craft responsive websites, web applications, landing pages, dashboards,<br>
+                    and e-commerce experiences that drive real business results.
+                </p>
+                <div class="hero-actions reveal-up">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Let's Work Together</span>
+                    </a>
+                </div>
+                <div class="hero-secondary reveal-up">
+                    <a href="#" class="hero-download">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+                <!-- Floating UI Cards -->
+                <div class="hero-float hero-float-1">
+                    <div class="float-icon">⚡</div>
+                    <span>Performance</span>
+                </div>
+                <div class="hero-float hero-float-2">
+                    <div class="float-icon">📱</div>
+                    <span>Responsive</span>
+                </div>
+                <div class="hero-float hero-float-3">
+                    <div class="float-icon">🎨</div>
+                    <span>UI/UX</span>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Crafting Digital Experiences<br>That <span class="text-orange">Matter</span></h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image reveal-up">
+                        <div class="about-image-wrapper">
+                            <div class="about-image-placeholder">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+                            </div>
+                            <div class="about-image-border"></div>
+                            <div class="about-image-dot"></div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <p class="about-text reveal-up">
+                            I'm a passionate frontend developer with a focus on creating beautiful, functional, and user-centered digital experiences. With expertise in modern web technologies, I transform complex problems into simple, elegant interfaces.
+                        </p>
+                        <p class="about-text reveal-up">
+                            My development philosophy centers on clean code, performance optimization, and pixel-perfect attention to detail. I believe every pixel matters and every interaction should feel intentional.
+                        </p>
+                        <div class="about-stats reveal-up">
+                            <div class="stat">
+                                <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Technologies</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                                <span class="stat-label">Responsive</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="24">0</span><span class="stat-plus">/7</span>
+                                <span class="stat-label">Creative Mindset</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Skills</span>
+                    <h2 class="section-title">Technologies I<br><span class="text-orange">Work With</span></h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card reveal-up" data-delay="0">
+                        <div class="skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l8 4 8-4v16l-8 4-8-4V4z"/><path d="M12 8v12"/><path d="M4 12h16"/></svg>
+                        </div>
+                        <h3 class="skill-name">HTML5</h3>
+                        <p class="skill-desc">Semantic markup & accessibility</p>
+                    </div>
+                    <div class="skill-card reveal-up" data-delay="50">
+                        <div class="skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/></svg>
+                        </div>
+                        <h3 class="skill-name">CSS3</h3>
+                        <p class="skill-desc">Animations, Grid & Flexbox</p>
+                    </div>
+                    <div class="skill-card reveal-up" data-delay="100">
+                        <div class="skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-desc">ES6+, DOM & async patterns</p>
+                    </div>
+                    <div class="skill-card reveal-up" data-delay="150">
+                        <div class="skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M1.05 12H3m18.9 0H23M12 1.05V3m0 18v1.95"/><path d="M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"/></svg>
+                        </div>
+                        <h3 class="skill-name">Git</h3>
+                        <p class="skill-desc">Version control & workflows</p>
+                    </div>
+                    <div class="skill-card reveal-up" data-delay="200">
+                        <div class="skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </div>
+                        <h3 class="skill-name">GitHub</h3>
+                        <p class="skill-desc">Collaboration & open source</p>
+                    </div>
+                    <div class="skill-card reveal-up" data-delay="250">
+                        <div class="skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9m-9 9a9 9 0 0 1 9-9"/></svg>
+                        </div>
+                        <h3 class="skill-name">REST APIs</h3>
+                        <p class="skill-desc">Data fetching & integration</p>
+                    </div>
+                    <div class="skill-card reveal-up" data-delay="300">
+                        <div class="skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3 class="skill-name">Responsive Design</h3>
+                        <p class="skill-desc">Mobile-first & fluid layouts</p>
+                    </div>
+                    <div class="skill-card reveal-up" data-delay="350">
+                        <div class="skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        </div>
+                        <h3 class="skill-name">UI/UX</h3>
+                        <p class="skill-desc">Design systems & interaction</p>
+                    </div>
+                    <div class="skill-card reveal-up" data-delay="400">
+                        <div class="skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                        </div>
+                        <h3 class="skill-name">Accessibility</h3>
+                        <p class="skill-desc">WCAG standards & ARIA</p>
+                    </div>
+                    <div class="skill-card reveal-up" data-delay="450">
+                        <div class="skill-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <h3 class="skill-name">Performance</h3>
+                        <p class="skill-desc">Optimization & Core Web Vitals</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section experience" id="experience">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Experience</span>
+                    <h2 class="section-title">Professional<br><span class="text-orange">Journey</span></h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item reveal-up" data-delay="0">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">
+                                <span>2023 — Present</span>
+                            </div>
+                            <h3 class="timeline-title">Frontend Developer</h3>
+                            <p class="timeline-company">TechVision Labs</p>
+                            <p class="timeline-desc">
+                                Leading frontend development for enterprise SaaS products. Building performant, accessible interfaces used by thousands of users daily. Implementing design systems and component libraries.
+                            </p>
+                            <div class="timeline-tech">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Next.js</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-up" data-delay="100">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">
+                                <span>2022 — 2023</span>
+                            </div>
+                            <h3 class="timeline-title">Freelance Frontend Developer</h3>
+                            <p class="timeline-company">Self-Employed</p>
+                            <p class="timeline-desc">
+                                Delivered custom web solutions for startups and small businesses. Built landing pages, e-commerce stores, and corporate websites. Managed client relationships from concept to deployment.
+                            </p>
+                            <div class="timeline-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>WordPress</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-up" data-delay="200">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">
+                                <span>2021 — 2022</span>
+                            </div>
+                            <h3 class="timeline-title">Web Developer Intern</h3>
+                            <p class="timeline-company">DigitalCraft Studio</p>
+                            <p class="timeline-desc">
+                                Assisted in building responsive websites and web applications. Gained hands-on experience with modern frontend tools and agile development workflows. Contributed to 8+ client projects.
+                            </p>
+                            <div class="timeline-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Projects</span>
+                    <h2 class="section-title">Selected <span class="text-orange">Work</span></h2>
+                    <p class="section-subtitle">Real-world interfaces built to solve real business problems.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Nexa Finance -->
+                    <div class="project-card project-card-large reveal-up" data-delay="0">
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #0a1628 0%, #0d2847 50%, #0a1628 100%);">
+                                <div class="project-mockup project-mockup-finance">
+                                    <div class="mockup-bar">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="mockup-content">
+                                        <div class="mockup-sidebar"></div>
+                                        <div class="mockup-main">
+                                            <div class="mockup-card"></div>
+                                            <div class="mockup-card"></div>
+                                            <div class="mockup-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="./projects/nexa-finance/index.html" class="project-link">View Live Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Fintech</span>
+                            <h3 class="project-title">Nexa Finance</h3>
+                            <p class="project-desc">A modern digital banking and financial management platform with sophisticated data visualization and premium UI design.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Charts</span>
+                                <span>Dark UI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="./projects/nexa-finance/index.html" class="project-btn">Live Demo</a>
+                                <a href="#" class="project-btn project-btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <!-- Case Study Modal Trigger -->
+                        <button class="case-study-trigger" data-project="nexa-finance">
+                            <span>View Case Study</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+
+                    <!-- Project 2: Velora -->
+                    <div class="project-card reveal-up" data-delay="100">
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d1f1f 50%, #1a1a1a 100%);">
+                                <div class="project-mockup project-mockup-ecommerce">
+                                    <div class="mockup-bar">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="mockup-content mockup-content-ecom">
+                                        <div class="mockup-product-grid">
+                                            <div class="mockup-product"></div>
+                                            <div class="mockup-product"></div>
+                                            <div class="mockup-product"></div>
+                                            <div class="mockup-product"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="./projects/velora/index.html" class="project-link">View Live Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">E-Commerce</span>
+                            <h3 class="project-title">Velora</h3>
+                            <p class="project-desc">Premium fashion & lifestyle e-commerce brand with elegant product layouts and sophisticated shopping experience.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>E-Commerce</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="./projects/velora/index.html" class="project-btn">Live Demo</a>
+                                <a href="#" class="project-btn project-btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <button class="case-study-trigger" data-project="velora">
+                            <span>View Case Study</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+
+                    <!-- Project 3: TaskFlow -->
+                    <div class="project-card reveal-up" data-delay="200">
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #0f0f1a 0%, #1a1040 50%, #0f0f1a 100%);">
+                                <div class="project-mockup project-mockup-saas">
+                                    <div class="mockup-bar">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="mockup-content">
+                                        <div class="mockup-sidebar mockup-sidebar-saas"></div>
+                                        <div class="mockup-main mockup-main-saas">
+                                            <div class="mockup-board">
+                                                <div class="mockup-col"></div>
+                                                <div class="mockup-col"></div>
+                                                <div class="mockup-col"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="./projects/taskflow/index.html" class="project-link">View Live Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">SaaS</span>
+                            <h3 class="project-title">TaskFlow</h3>
+                            <p class="project-desc">Enterprise productivity and project management platform with interactive dashboard and workflow automation.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Interactive UI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="./projects/taskflow/index.html" class="project-btn">Live Demo</a>
+                                <a href="#" class="project-btn project-btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <button class="case-study-trigger" data-project="taskflow">
+                            <span>View Case Study</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+
+                    <!-- Project 4: Haven -->
+                    <div class="project-card reveal-up" data-delay="100">
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #1a1a1a 0%, #2a2015 50%, #1a1a1a 100%);">
+                                <div class="project-mockup project-mockup-realestate">
+                                    <div class="mockup-bar">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="mockup-content mockup-content-re">
+                                        <div class="mockup-search-bar"></div>
+                                        <div class="mockup-property-grid">
+                                            <div class="mockup-property"></div>
+                                            <div class="mockup-property"></div>
+                                            <div class="mockup-property"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="./projects/haven/index.html" class="project-link">View Live Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Real Estate</span>
+                            <h3 class="project-title">Haven</h3>
+                            <p class="project-desc">Modern property discovery and real estate platform with advanced search, filtering, and interactive property cards.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Search/Filter</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="./projects/haven/index.html" class="project-btn">Live Demo</a>
+                                <a href="#" class="project-btn project-btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <button class="case-study-trigger" data-project="haven">
+                            <span>View Case Study</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+
+                    <!-- Project 5: Noir Digital -->
+                    <div class="project-card reveal-up" data-delay="200">
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0a 50%, #0a0a0a 100%);">
+                                <div class="project-mockup project-mockup-agency">
+                                    <div class="mockup-bar">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="mockup-content mockup-content-agency">
+                                        <div class="mockup-hero-agency">
+                                            <div class="mockup-big-text"></div>
+                                            <div class="mockup-sub-text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="./projects/noir-digital/index.html" class="project-link">View Live Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Creative Agency</span>
+                            <h3 class="project-title">Noir Digital</h3>
+                            <p class="project-desc">A visually stunning creative agency website with bold typography, smooth transitions, and advanced animations.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Animations</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="./projects/noir-digital/index.html" class="project-btn">Live Demo</a>
+                                <a href="#" class="project-btn project-btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <button class="case-study-trigger" data-project="noir-digital">
+                            <span>View Case Study</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+
+                    <!-- Project 6: Essence By Gem -->
+                    <div class="project-card reveal-up" data-delay="100">
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #0e0b0e 0%, #2a1520 50%, #0e0b0e 100%);">
+                                <div class="project-mockup project-mockup-perfume">
+                                    <div class="mockup-bar">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="mockup-content mockup-content-perfume">
+                                        <div class="mockup-perfume-bottle">
+                                            <div class="mp-cap"></div>
+                                            <div class="mp-neck"></div>
+                                            <div class="mp-body"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="./projects/essence-by-gem/index.html" class="project-link">View Live Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">E-Commerce / Luxury</span>
+                            <h3 class="project-title">Essence By Gem</h3>
+                            <p class="project-desc">A premium artisan perfume store with elegant product presentations, fragrance note details, and a luxurious shopping experience.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Luxury UI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="./projects/essence-by-gem/index.html" class="project-btn">Live Demo</a>
+                                <a href="#" class="project-btn project-btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <button class="case-study-trigger" data-project="essence-by-gem">
+                            <span>View Case Study</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study Modals -->
+            <div class="case-study-modal" id="caseStudyModal">
+                <div class="modal-backdrop"></div>
+                <div class="modal-content">
+                    <button class="modal-close" id="modalClose">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                    </button>
+                    <div class="modal-body" id="modalBody"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Services</span>
+                    <h2 class="section-title">What I <span class="text-orange">Offer</span></h2>
+                    <p class="section-subtitle">Comprehensive frontend development services tailored to your business needs.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal-up" data-delay="0">
+                        <div class="service-number">01</div>
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+                        </div>
+                        <h3 class="service-title">Website Development</h3>
+                        <p class="service-desc">Modern responsive websites built for businesses and brands. Clean, fast, and optimized for search engines.</p>
+                        <div class="service-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                    <div class="service-card reveal-up" data-delay="80">
+                        <div class="service-number">02</div>
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                        </div>
+                        <h3 class="service-title">Landing Pages</h3>
+                        <p class="service-desc">High-converting landing pages designed to turn visitors into customers. Focused on clarity and action.</p>
+                        <div class="service-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                    <div class="service-card reveal-up" data-delay="160">
+                        <div class="service-number">03</div>
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3 class="service-title">Web Applications</h3>
+                        <p class="service-desc">Interactive frontend applications with polished user experiences. Built with modern JavaScript patterns.</p>
+                        <div class="service-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                    <div class="service-card reveal-up" data-delay="240">
+                        <div class="service-number">04</div>
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                        </div>
+                        <h3 class="service-title">E-Commerce</h3>
+                        <p class="service-desc">Modern online stores with intuitive shopping experiences. Product displays, carts, and checkout flows.</p>
+                        <div class="service-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                    <div class="service-card reveal-up" data-delay="320">
+                        <div class="service-number">05</div>
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" stroke-width="1.5"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                        </div>
+                        <h3 class="service-title">Dashboard Development</h3>
+                        <p class="service-desc">Professional dashboards and data interfaces. Clear data visualization and intuitive navigation.</p>
+                        <div class="service-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                    <div class="service-card reveal-up" data-delay="400">
+                        <div class="service-number">06</div>
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        </div>
+                        <h3 class="service-title">Website Redesign</h3>
+                        <p class="service-desc">Transform outdated websites into modern experiences. Refreshed design, improved UX, better performance.</p>
+                        <div class="service-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal-up">
+                        <span class="section-tag">Contact</span>
+                        <h2 class="section-title">Let's Build Something<br><span class="text-orange">Amazing Together</span></h2>
+                        <p class="contact-desc">
+                            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Let's connect and bring your ideas to life.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-item-label">Email</span>
+                                    <a href="mailto:hello@alexmorgan.dev" class="contact-item-value">hello@alexmorgan.dev</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-item-label">Location</span>
+                                    <span class="contact-item-value">Available Worldwide (Remote)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-socials">
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Dribbble">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper reveal-up" data-delay="100">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project inquiry">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Send Message</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-bracket">{</span>
+                        <span class="logo-text">TN</span>
+                        <span class="logo-bracket">}</span>
+                    </a>
+                    <p class="footer-text">Building fast, modern and high-converting digital experiences.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#experience">Experience</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Work</h4>
+                        <a href="#projects">Projects</a>
+                        <a href="./projects/nexa-finance/index.html">Nexa Finance</a>
+                        <a href="./projects/velora/index.html">Velora</a>
+                        <a href="./projects/taskflow/index.html">TaskFlow</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>More</h4>
+                        <a href="./projects/haven/index.html">Haven</a>
+                        <a href="./projects/noir-digital/index.html">Noir Digital</a>
+                        <a href="./projects/essence-by-gem/index.html">Essence By Gem</a>
+                        <a href="#services">Services</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tosin Ndidi. All rights reserved.</p>
+                <p>Built with passion and vanilla code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

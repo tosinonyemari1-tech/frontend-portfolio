@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Velora — Premium Fashion & Lifestyle Brand">
+    <title>Velora — Premium Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a href="../../index.html" class="back-link">← Back to Portfolio</a>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">Free shipping on orders over $150</div>
+
+    <!-- Navigation -->
+    <header class="nav">
+        <div class="container">
+            <nav class="nav-inner">
+                <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+                </button>
+                <a href="#" class="logo">VELORA</a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#collections">Collections</a>
+                    <a href="#shop">Shop</a>
+                    <a href="#about">About</a>
+                    <a href="#reviews">Reviews</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="nav-icon" id="searchBtn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    </button>
+                    <button class="nav-icon" id="wishlistBtn" aria-label="Wishlist">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        <span class="badge" id="wishlistCount">0</span>
+                    </button>
+                    <button class="nav-icon" id="cartBtn" aria-label="Cart">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+                        <span class="badge" id="cartCount">0</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-overlay" id="menuOverlay"></div>
+        <div class="mobile-menu-panel">
+            <div class="mobile-menu-header">
+                <span class="logo">VELORA</span>
+                <button class="close-btn" id="closeMenu" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="#collections">Collections</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-inner">
+            <input type="text" class="search-input" placeholder="Search products..." id="searchInput">
+            <button class="search-close" id="searchClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-label">New Collection 2026</span>
+                    <h1>Timeless<br><em>Elegance</em></h1>
+                    <p>Curated fashion for the modern individual. Premium materials, minimalist design, conscious craftsmanship.</p>
+                    <div class="hero-btns">
+                        <a href="#shop" class="btn-primary">Shop Now</a>
+                        <a href="#collections" class="btn-text">View Collections →</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-product">
+                        <div class="product-card-large">
+                            <div class="product-img-placeholder">
+                                <div class="product-shape shape-dress"></div>
+                            </div>
+                            <span class="product-badge">New</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections -->
+        <section class="section" id="collections">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Collections</span>
+                    <h2>Shop by <em>Category</em></h2>
+                </div>
+                <div class="collections-grid">
+                    <div class="collection-card">
+                        <div class="collection-img" style="background:linear-gradient(135deg,#1a1a1a,#2d2020)">
+                            <div class="product-shape shape-top"></div>
+                        </div>
+                        <h3>Tops</h3>
+                        <span class="count">24 pieces</span>
+                    </div>
+                    <div class="collection-card">
+                        <div class="collection-img" style="background:linear-gradient(135deg,#1a1a1a,#202d20)">
+                            <div class="product-shape shape-pants"></div>
+                        </div>
+                        <h3>Bottoms</h3>
+                        <span class="count">18 pieces</span>
+                    </div>
+                    <div class="collection-card">
+                        <div class="collection-img" style="background:linear-gradient(135deg,#1a1a1a,#20202d)">
+                            <div class="product-shape shape-dress"></div>
+                        </div>
+                        <h3>Dresses</h3>
+                        <span class="count">16 pieces</span>
+                    </div>
+                    <div class="collection-card">
+                        <div class="collection-img" style="background:linear-gradient(135deg,#1a1a1a,#2d2d20)">
+                            <div class="product-shape shape-bag"></div>
+                        </div>
+                        <h3>Accessories</h3>
+                        <span class="count">32 pieces</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop / Products -->
+        <section class="section section-alt" id="shop">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Shop</span>
+                    <h2>Featured <em>Products</em></h2>
+                </div>
+                <!-- Filters -->
+                <div class="shop-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="tops">Tops</button>
+                    <button class="filter-btn" data-filter="bottoms">Bottoms</button>
+                    <button class="filter-btn" data-filter="dresses">Dresses</button>
+                    <button class="filter-btn" data-filter="accessories">Accessories</button>
+                </div>
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual">
+                        <div class="about-img-placeholder">
+                            <div class="about-pattern"></div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <span class="section-tag">About Velora</span>
+                        <h2>Crafted with<br><em>Intention</em></h2>
+                        <p>Velora was founded on the belief that fashion should be both beautiful and responsible. Every piece in our collection is designed with intention — using sustainable materials, ethical manufacturing, and timeless aesthetics that transcend seasonal trends.</p>
+                        <p>We work closely with artisans and craftspeople who share our commitment to quality. From the initial sketch to the final stitch, every detail matters.</p>
+                        <div class="about-values">
+                            <div class="value"><strong>Sustainable</strong><span>Eco-friendly materials</span></div>
+                            <div class="value"><strong>Ethical</strong><span>Fair manufacturing</span></div>
+                            <div class="value"><strong>Timeless</strong><span>Beyond trends</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="section section-alt" id="reviews">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Reviews</span>
+                    <h2>What Our <em>Customers</em> Say</h2>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The quality is exceptional. Every piece feels luxurious and the fit is always perfect. Velora has become my go-to brand."</p>
+                        <div class="review-author">
+                            <div class="author-avatar" style="background:linear-gradient(135deg,#c9a87c,#8b6f4e)"></div>
+                            <div><strong>Emma S.</strong><span>Verified Buyer</span></div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Finally found a brand that combines style with sustainability. The minimalist aesthetic is exactly what I was looking for."</p>
+                        <div class="review-author">
+                            <div class="author-avatar" style="background:linear-gradient(135deg,#7c9cc9,#4e6f8b)"></div>
+                            <div><strong>Sophia L.</strong><span>Verified Buyer</span></div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Beautiful packaging, beautiful clothes. The attention to detail from order to delivery is remarkable. Highly recommend."</p>
+                        <div class="review-author">
+                            <div class="author-avatar" style="background:linear-gradient(135deg,#c97c7c,#8b4e4e)"></div>
+                            <div><strong>Isabella M.</strong><span>Verified Buyer</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="section" id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Gallery</span>
+                    <h2>Follow Us <em>@velora</em></h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" style="background:linear-gradient(135deg,#2a2015,#1a1a1a)"></div>
+                    <div class="gallery-item" style="background:linear-gradient(135deg,#151a2a,#1a1a1a)"></div>
+                    <div class="gallery-item" style="background:linear-gradient(135deg,#1a2a15,#1a1a1a)"></div>
+                    <div class="gallery-item" style="background:linear-gradient(135deg,#2a1520,#1a1a1a)"></div>
+                    <div class="gallery-item" style="background:linear-gradient(135deg,#202a15,#1a1a1a)"></div>
+                    <div class="gallery-item" style="background:linear-gradient(135deg,#15202a,#1a1a1a)"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="newsletter">
+                    <h2>Stay in the <em>Loop</em></h2>
+                    <p>Subscribe for early access, exclusive offers, and style inspiration.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo">VELORA</span>
+                    <p>Premium fashion for the modern individual. Sustainable, ethical, timeless.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Tops</a>
+                    <a href="#">Bottoms</a>
+                    <a href="#">Dresses</a>
+                    <a href="#">Accessories</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <a href="#">Size Guide</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Velora. All rights reserved.</p>
+                <a href="../../index.html" class="back-portfolio">← Back to Portfolio</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="qv-backdrop"></div>
+        <div class="qv-content">
+            <button class="qv-close" id="qvClose" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="qv-grid">
+                <div class="qv-image" id="qvImage"></div>
+                <div class="qv-details">
+                    <h3 id="qvName"></h3>
+                    <p class="qv-price" id="qvPrice"></p>
+                    <p class="qv-desc" id="qvDesc"></p>
+                    <div class="qv-sizes">
+                        <span class="size-opt">XS</span>
+                        <span class="size-opt">S</span>
+                        <span class="size-opt active">M</span>
+                        <span class="size-opt">L</span>
+                        <span class="size-opt">XL</span>
+                    </div>
+                    <button class="btn-primary qv-add-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
