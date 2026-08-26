@@ -4,12 +4,12 @@
 
     // Product Data
     const products = [
-        {id:1,name:"Velvet Noir",category:"Oriental",price:125,size:"50ml",rating:"4.9",badge:"Bestseller",desc:"A deep, intoxicating blend of black oud, vanilla absolute, and smoky amber. Designed for evening wear and unforgettable moments.",notes:{top:["Bergamot","Pink Pepper"],heart:["Oud","Incense"],base:["Vanilla","Amber"]},capColor:"#3a1528",bodyColor:"#2a1020"},
-        {id:2,name:"Rose Absolue",category:"Floral",price:145,size:"50ml",rating:"4.9",badge:"New",desc:"The finest Isparta rose absolute paired with peony, sandalwood, and a whisper of white musk. Romantic, timeless, and utterly feminine.",notes:{top:["Lychee","Peony"],heart:["Rose Absolute","Jasmine"],base:["Sandalwood","Musk"]},capColor:"#4a2035",bodyColor:"#3a1528"},
-        {id:3,name:"Citrus Bloom",category:"Citrus",price:95,size:"50ml",rating:"4.8",badge:"",desc:"Sparkling Calabrian bergamot, neroli, and white tea. An energizing, uplifting scent that captures the essence of Mediterranean mornings.",notes:{top:["Bergamot","Lemon"],heart:["Neroli","White Tea"],base:["Cedarwood","White Musk"]},capColor:"#3a3520",bodyColor:"#2a2818"},
-        {id:4,name:"Sandalwood Dreams",category:"Woody",price:135,size:"50ml",rating:"4.9",badge:"",desc:"Creamy Mysore sandalwood meets vetiver and tonka bean. Warm, meditative, and deeply comforting. A scent that feels like a cashmere blanket.",notes:{top:["Cardamom","Bergamot"],heart:["Sandalwood","Vetiver"],base:["Tonka Bean","Cedar"]},capColor:"#2a2520",bodyColor:"#1a1815"},
-        {id:5,name:"Golden Hour",category:"Oriental",price:155,size:"75ml",rating:"5.0",badge:"Premium",desc:"A luxurious composition of saffron, Turkish rose, and aged oud. Inspired by the magical light of sunset. Our most opulent creation.",notes:{top:["Saffron","Bitter Almond"],heart:["Turkish Rose","Oud"],base:["Leather","Sandalwood"]},capColor:"#4a3520",bodyColor:"#3a2818"},
-        {id:6,name:"Midnight Jasmine",category:"Floral",price:115,size:"50ml",rating:"4.8",badge:"",desc:"Night-blooming jasmine, tuberose, and cashmere wood. A heady, seductive fragrance that blooms on the skin as the evening unfolds.",notes:{top:["Green Apple","Bergamot"],heart:["Jasmine","Tuberose"],base:["Cashmere Wood","Musk"]},capColor:"#202a20",bodyColor:"#151a15"},
+        {id:1,name:"Velvet Noir",category:"Oriental",price:20000,size:"50ml",rating:"4.9",badge:"Bestseller",desc:"A deep, intoxicating blend of black oud, vanilla absolute, and smoky amber. Designed for evening wear and unforgettable moments.",notes:{top:["Bergamot","Pink Pepper"],heart:["Oud","Incense"],base:["Vanilla","Amber"]},capColor:"#0d2040",bodyColor:"#0a1830"},
+        {id:2,name:"Rose Absolue",category:"Floral",price:24000,size:"50ml",rating:"4.9",badge:"New",desc:"The finest Isparta rose absolute paired with peony, sandalwood, and a whisper of white musk. Romantic, timeless, and utterly feminine.",notes:{top:["Lychee","Peony"],heart:["Rose Absolute","Jasmine"],base:["Sandalwood","Musk"]},capColor:"#1a3a6b",bodyColor:"#0d2040"},
+        {id:3,name:"Citrus Bloom",category:"Citrus",price:15000,size:"50ml",rating:"4.8",badge:"",desc:"Sparkling Calabrian bergamot, neroli, and white tea. An energizing, uplifting scent that captures the essence of Mediterranean mornings.",notes:{top:["Bergamot","Lemon"],heart:["Neroli","White Tea"],base:["Cedarwood","White Musk"]},capColor:"#1a4060",bodyColor:"#0d2840"},
+        {id:4,name:"Sandalwood Dreams",category:"Woody",price:22000,size:"50ml",rating:"4.9",badge:"",desc:"Creamy Mysore sandalwood meets vetiver and tonka bean. Warm, meditative, and deeply comforting. A scent that feels like a cashmere blanket.",notes:{top:["Cardamom","Bergamot"],heart:["Sandalwood","Vetiver"],base:["Tonka Bean","Cedar"]},capColor:"#0d2040",bodyColor:"#081828"},
+        {id:5,name:"Golden Hour",category:"Oriental",price:30000,size:"75ml",rating:"5.0",badge:"Premium",desc:"A luxurious composition of saffron, Turkish rose, and aged oud. Inspired by the magical light of sunset. Our most opulent creation.",notes:{top:["Saffron","Bitter Almond"],heart:["Turkish Rose","Oud"],base:["Leather","Sandalwood"]},capColor:"#1a3a6b",bodyColor:"#0d2848"},
+        {id:6,name:"Midnight Jasmine",category:"Floral",price:18000,size:"50ml",rating:"4.8",badge:"",desc:"Night-blooming jasmine, tuberose, and cashmere wood. A heady, seductive fragrance that blooms on the skin as the evening unfolds.",notes:{top:["Green Apple","Bergamot"],heart:["Jasmine","Tuberose"],base:["Cashmere Wood","Musk"]},capColor:"#0d2040",bodyColor:"#081828"},
     ];
 
     // Render Products
@@ -33,7 +33,7 @@
                     <h3 class="product-name">${p.name}</h3>
                     <span class="product-size">${p.size} · ${p.category}</span>
                     <div class="product-bottom">
-                        <span class="product-price">$${p.price}</span>
+                        <span class="product-price">\u20A6${p.price.toLocaleString()}</span>
                         <span class="product-rating">★ ${p.rating}</span>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                 <div class="modal-details">
                     <span class="modal-category">${p.category}</span>
                     <h3>${p.name}</h3>
-                    <div class="modal-price">$${p.price} · ${p.size}</div>
+                    <div class="modal-price">₦${p.price.toLocaleString()} · ${p.size}</div>
                     <p>${p.desc}</p>
                     <div class="modal-notes">
                         <h4>Fragrance Notes</h4>
@@ -82,7 +82,7 @@
                         <div class="modal-note"><span class="note-dot note-heart"></span><strong>Heart:</strong>&nbsp;${p.notes.heart.join(', ')}</div>
                         <div class="modal-note"><span class="note-dot note-base"></span><strong>Base:</strong>&nbsp;${p.notes.base.join(', ')}</div>
                     </div>
-                    <button class="btn-primary modal-add-btn" onclick="addToCart(${p.id})">Add to Cart — $${p.price}</button>
+                    <button class="btn-primary modal-add-btn" onclick="addToCart(${p.id})">Add to Cart — ₦${p.price.toLocaleString()}</button>
                 </div>
             </div>
         `;
