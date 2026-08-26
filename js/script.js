@@ -8,13 +8,17 @@
 
     // === LOADER ===
     const loader = document.getElementById('loader');
-    window.addEventListener('load', () => {
-        setTimeout(() => {
+    function hideLoader() {
+        if (loader && !loader.classList.contains('hidden')) {
             loader.classList.add('hidden');
             document.body.style.overflow = '';
             initRevealAnimations();
-        }, 1800);
-    });
+        }
+    }
+    // Hide after 1.8s, but also use DOMContentLoaded as safety net
+    window.addEventListener('load', () => setTimeout(hideLoader, 1800));
+    // Fallback: if load event never fires (e.g. file:// protocol), force hide after 3s
+    setTimeout(hideLoader, 3000);
 
     // === CUSTOM CURSOR ===
     const cursor = document.getElementById('cursor');
